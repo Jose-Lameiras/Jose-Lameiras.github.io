@@ -28,7 +28,29 @@ const CONFIG = {
     },
     external: {
       header: 'Outros Projetos',
-      projects: [], // Deixado vazio para esconder esta secção
+      projects: [
+        {
+          title: 'Sistema de RH e Registo de Ponto — AC Partners',
+          description:
+            'Sistema desenvolvido por mim e em uso numa fábrica: picagem de ponto num tablet à entrada, pedidos de férias e justificações, e área de RH com turnos, aprovações e horas para salários (exportação Excel). Java 21 + Spring Boot, PostgreSQL, React + TypeScript e app React Native (Expo) que funciona sem ligação. Código privado (propriedade da empresa).',
+          imageUrl: '',
+          link: 'https://github.com/Jose-Lameiras/projetos-ac-partners',
+        },
+        {
+          title: 'Folhas de Produção Digitais — AC Partners',
+          description:
+            'Em desenvolvimento: folhas de produção das máquinas de injeção preenchidas num tablet por turno, com área de administração no navegador. React Native (Expo), React + Vite e API em Java 21 + Spring Boot com PostgreSQL. Código privado (propriedade da empresa).',
+          imageUrl: '',
+          link: 'https://github.com/Jose-Lameiras/projetos-ac-partners',
+        },
+        {
+          title: 'RefleteConsumo — Projeto Final de Licenciatura',
+          description:
+            'App móvel, desenvolvida com um colega, que promove o consumo consciente e ajuda a evitar compras impulsivas: registo de desejos de compra, compras pendentes, gastos reais, quiz de autorreflexão e dicas diárias. React Native (Expo), Node.js/Express e MongoDB. Código privado.',
+          imageUrl: '',
+          link: 'https://github.com/Jose-Lameiras',
+        },
+      ],
     },
   },
   seo: {
@@ -37,7 +59,7 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: '', // Se tiveres LinkedIn, coloca o teu username aqui (ex: 'jose-lameiras')
+    linkedin: 'jjlameiras',
     x: '',
     mastodon: '',
     researchGate: '',
@@ -59,7 +81,7 @@ const CONFIG = {
     email: 'josejoao342@gmail.com',
   },
   resume: {
-    fileUrl: '', // Coloca aqui o link do PDF do teu CV quando o alojares online
+    fileUrl: '/CV_Jose_Lameiras_EN.pdf',
   },
   skills: [
     'Java',
@@ -69,7 +91,10 @@ const CONFIG = {
     'JavaScript',
     'TypeScript',
     'Kotlin',
+    'Spring Boot',
+    'React',
     'React Native',
+    'Node.js',
     'Assembly',
     'HTML/CSS',
     'Linux (Ubuntu)',
@@ -77,42 +102,12 @@ const CONFIG = {
     'Git',
     'Jira',
     'Azure',
-    'Cisco CCNA',
     'REST APIs',
     'SQL',
     'NoSQL',
   ],
-  experiences: [
-    {
-      company: 'Mariparque',
-      position: 'Membro do Staff',
-      from: 'Junho 2023',
-      to: 'Setembro 2024',
-      companyLink: '',
-    },
-    {
-      company: 'Jornada Mundial da Juventude',
-      position: 'Membro do Staff',
-      from: 'Agosto 2023',
-      to: 'Agosto 2023',
-      companyLink: '',
-    },
-    {
-      company: 'AC Partners',
-      position: 'Operário de Qualidade e Embalamento',
-      from: 'Junho 2021',
-      to: 'Setembro 2021',
-      companyLink: '',
-    },
-  ],
-  certifications: [
-    {
-      name: 'Cisco CCNA',
-      body: 'Routing & Switching',
-      year: '',
-      link: '',
-    },
-  ],
+  experiences: [],
+  certifications: [],
   educations: [
     {
       institution: 'Escola Superior de Tecnologia de Castelo Branco (IPCB)',
